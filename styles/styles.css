@@ -1,0 +1,15 @@
+.nav-link:after {
+  content: "|";
+  position: relative;
+	top: -2px;
+  margin-left: 15px;  
+}
+
+a:last-child:after {
+  content: "";
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Zen Tokyo Zoo', cursive;
+}
