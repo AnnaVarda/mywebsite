@@ -10,6 +10,18 @@ a:last-child:after {
 }
 
 h1 {
-	text-align: center;
-	font-family: 'Zen Tokyo Zoo', cursive;
+  font-size: 64px !important;
+  margin-top: 30px !important;
+  margin-bottom: 30px;
 }
+
+h1, h3 {
+	text-align: center;
+  font-family: 'Zen Loop', cursive;
+  
+}
+
+p {
+  font-size: 32px;
+}
+
