@@ -4,22 +4,20 @@
   // object with menu data
   // to guarantee order it's better to make it an array
   var menuData = {
-    // SKU is the key. Stock keeping unit used to track products
     "2342153": {
-      productName: "Mouse",
-      price: 199
+      productName: "Private Class",
+      price: 30
     },
-
     "12364324": {
-      productName: "Keyboard",
-      price: 699
+      productName: "Intermediate Group Class",
+      price: 60
     },
-
     "7893424": {
-      productName: "AMD CPU",
-      price: 6999
+      productName: "Advanced Group Class",
+      price: 70
     }
   };
+
 
   // again to guarantee order it's better to use an array
   var cartData = {};
@@ -45,7 +43,7 @@
 
     var menuText = document.createElement("span");
     menuText.className = "menu-text";
-    menuText.innerText = data.productName + " - " + "₹" + data.price;
+    menuText.innerText = data.productName + " - " + "€" + data.price;
 
     // handling the plus button
     var menuActionSpan = document.createElement("span");
@@ -128,7 +126,7 @@
     // creating item total
     var itemTotal = document.createElement("span");
     itemTotal.className = "item-total";
-    itemTotal.innerText = "₹" + data.price * qty;
+    itemTotal.innerText = "€" + data.price * qty;
 
     // creating the remove button
     var removeButton = document.createElement("button");
